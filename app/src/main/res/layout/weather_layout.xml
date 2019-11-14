@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/btSearchCity"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:scaleType="fitStart"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/loupe" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTemp"
+            android:text="20"
+            android:textSize="35sp"
+            android:textColor="@color/colorAsh"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDesc"
+            android:text="20"
+            android:textSize="35sp"
+            android:textColor="@color/colorAsh"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCityName"
+            android:text="20"
+            android:textSize="35sp"
+            android:textColor="@color/colorAsh"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llConvertTemp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="C"
+            android:id="@+id/btCel"
+            android:textSize="20sp"
+            android:background="@color/colorBlue"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="F"
+            android:id="@+id/btFeh"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/ivWeather"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Page"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorRed"
+        android:textColor="@android:color/white"
+        android:id="@+id/btDeletePage"/>
+
+
+</RelativeLayout>

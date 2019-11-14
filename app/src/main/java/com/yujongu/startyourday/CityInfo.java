@@ -11,7 +11,15 @@ public class CityInfo {
     private double lon;
     private double lat;
 
+    private String imageId;
 
+    public String getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(String imageId) {
+        this.imageId = imageId;
+    }
 
     public double getLon() {
         return lon;

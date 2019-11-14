@@ -1,72 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorLightGreen">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/tvTemp"
-        android:text="20"
-        android:textSize="35sp"
-        android:layout_margin="10dp"
-        android:fontFamily="monospace"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvDesc"
-        android:text="20"
-        android:textSize="35sp"
-        android:fontFamily="monospace"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvTemp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCityName"
-        android:text="20"
-        android:textSize="35sp"
-        android:fontFamily="monospace"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/tvDesc"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+    </android.support.v4.view.ViewPager>
 
     <LinearLayout
-        android:layout_alignParentRight="true"
+        android:id="@+id/dotsLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="C"
-            android:id="@+id/btCel"
-            android:textSize="20sp"
-            android:backgroundTint="@android:color/holo_blue_light"/>
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="F"
-            android:id="@+id/btFeh"
-            android:textSize="20sp"
-            android:backgroundTint="@android:color/transparent"/>
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
     </LinearLayout>
 
 
-
-
-    
-
-
-
-
-
-</RelativeLayout>
+</LinearLayout>
